@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Byte.ByteFragment">
+
+    <TextView
+        android:id="@+id/lblByte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Bytes :"
+        app:layout_constraintStart_toStartOf="@+id/lblKilo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="Kilobyte :"
+        app:layout_constraintStart_toStartOf="@+id/lblMega"
+        app:layout_constraintTop_toBottomOf="@+id/lblByte" />
+
+    <EditText
+        android:id="@+id/txtKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtByte"
+        app:layout_constraintStart_toStartOf="@+id/txtByte"
+        app:layout_constraintTop_toBottomOf="@+id/txtByte" />
+
+    <TextView
+        android:id="@+id/lblMega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="Megabyte :"
+        app:layout_constraintStart_toStartOf="@+id/lblGiga"
+        app:layout_constraintTop_toBottomOf="@+id/lblKilo" />
+
+    <EditText
+        android:id="@+id/txtMega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtKilo"
+        app:layout_constraintStart_toStartOf="@+id/txtKilo"
+        app:layout_constraintTop_toBottomOf="@+id/txtKilo" />
+
+    <TextView
+        android:id="@+id/lblGiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="Gigabyte :"
+        app:layout_constraintStart_toStartOf="@+id/lblTera"
+        app:layout_constraintTop_toBottomOf="@+id/lblMega" />
+
+    <EditText
+        android:id="@+id/txtGiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtMega"
+        app:layout_constraintStart_toStartOf="@+id/txtMega"
+        app:layout_constraintTop_toBottomOf="@+id/txtMega" />
+
+    <TextView
+        android:id="@+id/lblTera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="63dp"
+        android:text="Terabyte :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGiga" />
+
+    <EditText
+        android:id="@+id/txtTera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtGiga"
+        app:layout_constraintStart_toStartOf="@+id/txtGiga"
+        app:layout_constraintTop_toBottomOf="@+id/txtGiga" />
+
+    <EditText
+        android:id="@+id/txtByte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

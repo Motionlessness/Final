@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PrgmCalc.iml" filepath="$PROJECT_DIR$/PrgmCalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PrgmCalc.iml" filepath="$PROJECT_DIR$/.idea/modules/PrgmCalc.iml" group="PrgmCalc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="PrgmCalc/app" />
     </modules>
   </component>
 </project>
